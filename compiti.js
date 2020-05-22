@@ -6,7 +6,7 @@ ASSIGNMENT RULES
 - You can google / use StackOverflow BUT we suggest you to use just the material provided
 - You can test your code in a separate file or commenting the single parts in this file or directly in the Developer Console or in the Node Console.
 */
-
+ESERCIZI SVOLTI NEI COMMENTI
 /* EXERCISE 1
 Create and array with the first 5 positive numbers
 
