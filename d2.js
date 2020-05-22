@@ -77,7 +77,7 @@ Insert a value in a variable based on the resut of a ternary if
 */
 
 let number = 25;
-let age = "you are";
+let age = "you are very";
 
 if(number<20){
     generation="young"
@@ -92,10 +92,6 @@ else if(number>20){
 else{
     console.log("unknown")
 }
-
-
-
-
 
 /* WHEN YOU ARE FINISHED
 Send the code via Slack to the tutor! In the next days we'll also learn how to use GIT 
