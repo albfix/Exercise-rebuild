@@ -10,12 +10,10 @@ ASSIGNMENT RULES
 Write the code to execute a SUM between the number 12 and 20
 */
 
-let num1 = 12
+let num1 = 20
 let num2 = 20
 let totalSum = num1 + num2
 console.log(totalSum)
-
-
 
 /* EXERCISE 2
 Create a variable named X containing the number 12
@@ -61,7 +59,7 @@ Create the variable X (value less than 10). Write the code to print the literal 
 let x = 3
  
 if (x===0){
-    console.log('zero')
+    console.log('zero of zero')
 }
 else if (x===1){
     console.log('one')

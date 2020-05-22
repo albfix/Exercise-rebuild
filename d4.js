@@ -76,7 +76,6 @@ function strivify (s){
 }
 strivify(" is the greatest school")
 
-
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
@@ -89,7 +88,7 @@ function check3and7(number){
     else{console.log("is not multiple")}
 }
 
-check3and7(211)
+check3and7(221)
 
 
 /* WRITE YOUR CODE HERE */
