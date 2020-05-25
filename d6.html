@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <script>
+      /* EXERCISE 1
+            Write a function to change the document title of the page in something else
+            */
+
+           
+        function changeTitle (newtitle){            
+        document.title = newtitle
+        }
+      
+
+      /* EXERCISE 2
+            Write a function to change the class of the H1 on a page in "myHeading"
+            */
+
+           
+
+          
+
+      /* EXERCISE 3
+            Write a function to change the text of only the p which are child of a div
+            */
+
+            function changeP (){
+                document.querySelector('p').innerHTML = "NUOVO PARAGRAFO"
+            }
+
+      
+     
+
+      /* EXERCISE 4
+            Write a function to change the destination of every link to https://www.google.com
+            */
+
+            function changeLink (){
+                document.querySelector("a").innerText="LINK TO GOOGLE"
+                document.querySelector("a").href ="https://www.google.com"
+            }
+     
+
+      /* EXERCISE 5
+            Write a function to add a new item ONLY to the second list
+            */
+
+            function newLi (){
+                let newLi = document.createElement("li")
+                let text = document.createTextNode("NUOVO LI")
+                newLi.appendChild(text)
+                document.querySelector("#secondlist").appendChild(newLi)
+                
+
+            }
+
+      
+      /* EXERCISE 6
+           Write a function to add a second paragraph to the div
+            */
+
+            function newDivP (){
+                let newP = document.createElement("p")
+                let newPtext = document.createTextNode("NUOVO TESTO PARAGRAFO DIV")
+                newP.appendChild(newPtext)
+                document.querySelector('div').appendChild(newP)
+            }
+
+      
+      /* EXERCISE 7
+           Write a function to make the first UL disappear
+            */
+
+            function hideUl(){
+                document.querySelector('ul').style.visibility = "hidden"
+            }
+
+      
+      /* EXERCISE 8
+            Write a function to make the background of every UL green
+            */
+
+            function greenBg (){
+                document.querySelector("#secondList").style.backgroundColor = "green";
+            }
+
+        
+
+      /* EXERCISE 9
+            Make the heading of the page changing color every time the user clicks on it
+            */
+           const colors =[
+               "red",
+               "green",
+               "blue",
+           ];
+
+           function changeCol (){
+               document.body.style.backgroundColor =
+               colors [Math.floor(Math.random() * colors.length)]
+           }
+
+        
+
+
+     
+      /* EXERCISE 10
+          Create a new welcome alert message when the page successfully loads
+            */
+
+            function alertMessage (){
+                alert("Welcome!")
+            }
+
+
+  
+      /* EXERCISE 11
+            Use HTML5 tags to divide sections, headers etc 
+            */
+
+            window.onload = function () {
+                changeTitle("New Title");
+                addClass()
+                changeP ()
+                changeLink ()
+                newLi ()
+                newDivP ()
+                hideUl()
+                greenBg ()
+                alertMessage ()
+                changeCol ()
+            }
+
+
+    </script>
+
+    <style>
+      .myHeading {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+
+      <h1 id="myDIV">This is the title of the page</h1>
+
+      <!--<button onclick="addClass()">Try it</button>-->
+    
+       <script>
+        function addClass(){
+            document.getElementById('myDIV').className = "myHeading"
+        }
+        </script>
+      
+
+      
+      <h2>This is the subtitle of the page</h2>
+    </div>
+
+    <div>
+      <hr />
+
+      <ul id="firstList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <ul id="secondList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <a href="strive.school">This link goes to Strive School</a>
+
+      <div>
+        <p>This text is just for the exercise</p>
+      </div>
+    </div>
+
+    <div>
+      <p>And this text is just for the exercise too!</p>
+    </div>
+  </body>
+</html>
